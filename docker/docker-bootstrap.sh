@@ -46,5 +46,5 @@ elif [[ "${1}" == "app" ]]; then
   flask run -p 8088 --with-threads --reload --debugger --host=0.0.0.0
 elif [[ "${1}" == "app-gunicorn" ]]; then
   echo "Starting web app..."
-  /usr/bin/run-server.sh
+  /app/docker/run-server.sh
 fi
