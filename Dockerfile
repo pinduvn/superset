@@ -80,7 +80,7 @@ ENV LANG=C.UTF-8 \
     PYTHONPATH="/app/pythonpath" \
     SUPERSET_HOME="/app/superset_home" \
     SUPERSET_PORT=10000 \
-    PORT=10000
+    SECRET_KEY=ced45cd52f3f1df51310939e298cd6a4
 
 RUN mkdir -p ${PYTHONPATH} \
         && useradd --user-group -d ${SUPERSET_HOME} -m --no-log-init --shell /bin/bash superset \
